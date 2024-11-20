@@ -3,14 +3,10 @@ import BigLogo from "@/components/template/big-logo";
 
 export default function home() {
   return (
-    <div
-      className="
-       flex h-screen flex-col justify-center  items-center
-       bg-[url('/background-elementos.svg')] bg-cover gap-10"
-    >
+    <div className="flex h-screen flex-col items-center justify-center gap-10 bg-[url('/background-elementos.svg')] bg-cover">
       <div className="flex flex-col items-center gap-4">
         <BigLogo />
-        <p className="text-zinc-500 font-light w-96 leading-6 text-center select-none">
+        <p className="w-96 select-none text-center font-light leading-6 text-zinc-500">
           Crie e gerencie o convite do seu evento de forma rapida e facil, sem
           complicacoes!
         </p>
