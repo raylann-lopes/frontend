@@ -1,7 +1,7 @@
 import guest from "../model/guest";
 import guestValidation from "./guest-validation";
 
-export default function guestProcess(guest: Partial<guest>): guest {
+export default function complementGuest(guest: Partial<guest>): guest {
   const erros = guestValidation(guest);
 
   if (erros.length > 0) {

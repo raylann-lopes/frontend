@@ -1,12 +1,10 @@
 import Id from "@/core/shared/Id";
-import validacao from "./Event-validation";
 import password from "@/core/shared/password";
 import Event from "@/core/event/model/event";
+import eventValidation from "./Event-validation";
 
-export default function complementarEvento(
-  partialEvent: Partial<Event>
-): Event {
-  const errors = validacao(partialEvent);
+export default function complementEvent(partialEvent: Partial<Event>): Event {
+  const errors = eventValidation(partialEvent);
 
   if (errors.length) {
     throw new Error(errors.join("\n"));
