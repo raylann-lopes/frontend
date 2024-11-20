@@ -1,6 +1,6 @@
 import Event from "../model/event";
 
-export default function validacao(event: Partial<Event>): string[] {
+export default function eventValidation(event: Partial<Event>): string[] {
   const errors: string[] = [];
 
   if (!event.alias) {
