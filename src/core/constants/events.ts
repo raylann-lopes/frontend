@@ -1,7 +1,7 @@
 import Event from "../event/model/event";
 import Id from "../shared/Id";
 
-const eventos: Event[] = [
+const events: Event[] = [
   {
     id: Id.novo(),
     alias: "evento-fullstack",
@@ -248,4 +248,4 @@ const eventos: Event[] = [
   },
 ];
 
-export default eventos;
+export default events;
